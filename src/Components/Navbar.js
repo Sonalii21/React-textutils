@@ -1,12 +1,14 @@
 
+
 import React from 'react'
 import { Link } from 'react-router-dom';
+
 
 export default function Navbar(props) {
     
     return (
         <div>
-            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: props.mode === 'dark' ? 'black' : props.mode === 'red' ? '#320404ff' : 'white', color: props.mode === 'light' ? 'black': 'white' }}>
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: props.mode === 'dark' ? 'black' : props.mode === 'red' ? '#320404ff':"#d7d7d7", color: props.mode === 'light' ? 'black': 'white' }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/" style={{color: props.mode === 'light' ? 'black': 'white'}}>{props.title}</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +34,7 @@ export default function Navbar(props) {
                         </div>
                         <div className="form-check form-switch mx-2">
                             <input className="form-check-input" onClick={props.redtoggle} type="checkbox" role="switch" id="switchCheckDefault" />
-                            <label className={`form-check-label text-${props.mode === 'red' ? 'light' : 'dark'}`} htmlFor="switchCheckDefault">Red Dark mode</label>
+                            <label className={`form-check-label text-${props.mode === 'light' ? 'dark' : 'light'}`} htmlFor="switchCheckDefault">Red Dark mode</label>
                         </div>
                     </div>
                 </div>
