@@ -1,4 +1,4 @@
-#TextUtils
+**#TextUtils**
 
 TextUtils is a powerful and easy-to-use online text utility app built with React. It allows you to analyze, transform, and optimize your text with features like:
 
