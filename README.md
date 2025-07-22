@@ -15,3 +15,10 @@ Copying text to clipboard
 Light, Dark, and Red Dark theme modes for comfortable use
 
 TextUtils is fast, secure, and privacy-friendly—your text never leaves your browser!
+
+Technology used:-
+HTML,
+CSS,
+Java,script
+React,
+Bootstrap
